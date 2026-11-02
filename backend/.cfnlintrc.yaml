@@ -1,0 +1,7 @@
+# CloudFormation Linter configuration
+ignore_checks:
+  - E3012  # Property check
+  - W2001  # Parameter not used
+
+templates:
+  - template.yaml

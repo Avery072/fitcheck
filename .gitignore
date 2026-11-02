@@ -1,0 +1,19 @@
+# Dependencies
+node_modules/
+venv/
+.venv/
+__pycache__/
+*.pyc
+
+# Build output
+build/
+dist/
+.aws-sam/
+
+# Env / secrets
+.env
+.env.*
+
+# OS / editor
+.DS_Store
+.claude/

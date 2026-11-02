@@ -1,0 +1,24 @@
+{
+  "name": "fitcheck-backend",
+  "version": "1.0.0",
+  "description": "Fitcheck backend with Python Lambda functions",
+  "scripts": {
+    "build": "sam build",
+    "deploy:dev": "sam deploy --config-env dev",
+    "deploy:prod": "sam deploy --config-env prod",
+    "local": "sam local start-api",
+    "logs": "sam logs -n UploadUrlFunction --tail"
+  },
+  "keywords": [
+    "fitcheck",
+    "aws",
+    "lambda",
+    "serverless"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "boto3": "^0.0.1",
+    "pillow": "^0.0.9"
+  }
+}

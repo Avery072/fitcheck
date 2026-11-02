@@ -1,0 +1,22 @@
+version = 0.1
+
+[default.deploy.parameters]
+stack_name = "fitcheck-dev"
+resolve_s3 = true
+s3_prefix = "fitcheck-dev"
+capabilities = "CAPABILITY_IAM"
+parameter_overrides = "Environment=\"dev\""
+confirm_changeset = true
+image_repositories = []
+
+
+[default.global.parameters]
+region = "us-west-2"
+[prod.deploy.parameters]
+stack_name = "fitcheck-prod"
+resolve_s3 = true
+s3_prefix = "fitcheck-prod"
+region = "us-west-2"
+capabilities = "CAPABILITY_IAM"
+parameter_overrides = "Environment=prod"
+confirm_changeset = true
